@@ -1,0 +1,26 @@
+:root {
+    --default-background: rgb(44, 41, 41);
+    --form-background: white;
+}
+
+.container {
+    display: flex;
+    background-color: var(--default-background);
+}
+
+.logo {
+    max-width: 20%;
+}
+
+img.leaf {
+    width: 10px;
+}
+
+img.odin {
+    width: 20px;
+}
+
+.form {
+    background-color: var(--form-background);
+    max-width: 50%;
+}
