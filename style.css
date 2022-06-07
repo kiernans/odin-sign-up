@@ -76,3 +76,7 @@ p {
     font-size: 24px;
     width: 75%;
 }
+
+form section {
+    max-width: 50%;
+}
