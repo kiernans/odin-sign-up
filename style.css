@@ -122,8 +122,9 @@ button {
     color: white;
     font-weight: bolder;
     border-radius: 5px;
-    width: 170px;
+    width: 214px;
     height: 45px;
+    border: 2px solid var(--button-color);
 }
 
 input {
@@ -134,7 +135,11 @@ input {
 }
 
 input:focus {
+    outline: none !important;
     box-shadow: 6px 5px 13px -7px grey;
-    border: 2px solid blue;
+    border: 1px solid blue;
 }
 
+input:invalid {
+    border: 1px solid red;
+}
