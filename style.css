@@ -5,8 +5,10 @@
 
 :root {
     --default-background: rgb(44, 41, 41);
-    --form-background: white;
-    
+    --form-half: #fafafa;
+    --form-background: rgb(255, 255, 255);
+    --button-color: #596D48;
+    --input-border: #E5E7EB;
 }
 
 body {
@@ -32,9 +34,10 @@ div.logo {
 div.form {
     display: flex;
     flex-direction: column;
-    background-color: var(--form-background);
-    width: 65%;
+    background-color: var(--form-half);
+    width: 64%;
     height: 100%;
+    padding: 1px;
 }
 
 .leaf {
@@ -77,6 +80,61 @@ p {
     width: 75%;
 }
 
-form section {
-    max-width: 50%;
+form {
+    display: flex;
+    width: 100%;
+    gap: 40px;
 }
+
+
+
+div.form-left,
+    div.form-right {
+        display: flex;
+        gap: 3px;
+        flex-direction: column;
+        width: 260px;
+}
+
+div.top {
+    margin-top: 130px;
+    margin-left: 55px;
+}
+
+div.middle {
+    background-color: var(--form-background);
+    padding-left: 50px;
+    padding-bottom: 40px;
+    box-shadow: -1px 5px 11px -7px grey;
+}
+
+div.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+}
+
+input {
+    height: 25px;
+    width: 225px;
+    border-radius: 5px;
+    border: 2px solid var(--input-border);
+}
+
+input:focus {
+    box-shadow: 6px 5px 13px -7px grey;
+    border: 2px solid blue;
+}
+
