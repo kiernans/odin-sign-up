@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf');
+}
+
 :root {
     --default-background: rgb(44, 41, 41);
     --form-background: white;
@@ -25,6 +30,8 @@ div.logo {
 }
 
 div.form {
+    display: flex;
+    flex-direction: column;
     background-color: var(--form-background);
     width: 65%;
     height: 100%;
@@ -42,8 +49,7 @@ div.odin-box {
     position: absolute;
     top: 214px;
     left: 1px;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgb(0 0 0 / 50%);
     align-items: center;
     justify-content: center;
 }
@@ -51,4 +57,22 @@ div.odin-box {
 img.odin {
     height: 117px;
     width: 88px;
+}
+
+h1.odin {
+    font-family: 'Norse-Bold', Fallback, sans-serif;
+    color: white;
+    font-size: 80px;
+}
+
+.logo footer {
+    position: relative;
+    bottom: 50px;
+    left: 135px;
+    color: white;
+}
+
+p {
+    font-size: 24px;
+    width: 75%;
 }
