@@ -6,14 +6,17 @@
 
 body {
     background-color: var(--default-background);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
 .container {
     display: flex;
-    height: 100vw;
-    width: 80vw;
+    height: 100%;
+    width: 77%;
     position: relative;
-    left: 165px;
+    left: 170px;
 }
 
 div.logo {
@@ -25,4 +28,27 @@ div.form {
     background-color: var(--form-background);
     width: 65%;
     height: 100%;
+}
+
+.leaf {
+    width: 100%;
+    height: 100%;
+}
+
+div.odin-box {
+    display: flex;
+    width: 497px;
+    height: 133px;
+    position: absolute;
+    top: 214px;
+    left: 1px;
+    background-color: black;
+    opacity: 0.5;
+    align-items: center;
+    justify-content: center;
+}
+
+img.odin {
+    height: 117px;
+    width: 88px;
 }
